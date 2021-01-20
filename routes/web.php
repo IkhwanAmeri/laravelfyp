@@ -20,4 +20,7 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/product', 'ProductController@index')->name('product');
+Route::get('/create', 'ProductController@create')->name('create');
+Route::get('/edit', 'ProductController@edit')->name('edit');
 
